@@ -1,0 +1,16 @@
+[package]
+name = "file_server"
+version = "1.0.0"
+description = ""
+authors = ["ZYG"]
+repository = "https://github.com/Creeeeeeeeeeper/local-file-server"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+hyper = { version = "0.14", features = ["full"] }
+clap = { version = "4.0", features = ["derive"] }
+mime_guess = "2"
+tokio-util = "0.7"
+percent-encoding = "2"
+chrono = "0.4"
