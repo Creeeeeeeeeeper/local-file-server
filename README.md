@@ -1,4 +1,9 @@
 # local-file-server  
+
+## 演示视频
+
+https://github.com/user-attachments/assets/f5f0c586-3ad1-459c-a66b-336ecce3e89f
+
 在 127.0.0.1 上启动一个本地文件服务器，可直接集成到你的项目中。
 
 ## 使用方法  
