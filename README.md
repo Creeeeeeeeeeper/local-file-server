@@ -2,6 +2,36 @@
 在 127.0.0.1 上启动一个本地文件服务器，可直接集成到你的项目中。
 
 ## 使用方法  
+
+### V 1.1.0
+
+```
+用法: file_server.exe [OPTIONS]
+
+选项:
+  -p, --port <PORT>  起始端口号（默认 8080） [default: 8080]
+  -r, --root <ROOT>  根目录（默认当前目录） [default: current directory]
+      --log <LOG>    日志模式: none / console / file / both [default: none]
+      --pretty       美化输出 （默认 false）[default: false]
+      --public       是否允许局域网访问（默认 false）[default: false]
+      --en           Enable English output.（默认 false）[default: false]
+  -h, --help         Print help
+  -V, --version      Print version
+```
+
+新增 `--public`、 `--pretty` 和 `--en` 参数，
+
+- `--public`可以实现是否只允许本机访问或开启局域网访问，默认只能本机访问
+- `--en`参数可以允许是否使用英文输出，默认中文输出
+- `--pretty`参数可以允许是否使用美化输出，默认不美化输出
+
+美化效果：
+<img width="2472" height="1364" alt="image" src="https://github.com/user-attachments/assets/6acf7941-e132-44c8-bcd0-5885d133f684" />
+
+
+
+### V 1.0.0
+
 ```bash
 file_server.exe -h
 ```
@@ -65,6 +95,36 @@ Launch a file server on 127.0.0.1.
 You can integrate this file server into your project.
 
 This file server has the following functions (file_Server. exe - h):
+
+## Usage
+
+### V 1.1.0
+
+```
+Usage: file_server.exe [OPTIONS]
+
+Options:
+  -p, --port <PORT>  port  [default: 8080]
+  -r, --root <ROOT>  root path（default current dir）
+      --log <LOG>    log mode: none / console / file / both [default: none]
+      --pretty       beautify output [default: false]
+      --public       Allow LAN access [default: false]
+      --en           Enable English output.[default: false]
+  -h, --help         Print help
+  -V, --version      Print version
+```
+
+Add three new flags: `--public`, `--pretty`, and `--en`.
+
+- `--public` lets you choose whether the service is reachable only from localhost (default) or from the entire LAN.
+- `--en` toggles output language: English when present, Chinese (default) otherwise.
+- `--pretty` enables or disables pretty-printed output; defaults to off.
+
+Example of pretty-printed output:
+<img width="2472" height="1364" alt="image" src="https://github.com/user-attachments/assets/6acf7941-e132-44c8-bcd0-5885d133f684" />
+
+
+### V 1.0.0
 
 ```
 Usage: file_server.exe [OPTIONS]
